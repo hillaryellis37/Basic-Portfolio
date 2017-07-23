@@ -1,12 +1,25 @@
-.wrapper {
-/*    display: flex;*/
-}
 
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
 .homepage-menu {
 	list-style-type: none;
 	position: absolute;
 	right: 0px;
 	top: 0px;
+}
+
+.content {
+	position: relative;
+	left: 200px;
+
+    display: flex;
+    justify-content: left;
+    width: 960px;
+	height: 600px;
+	margin-top: 20px;
 }
 
 li {
@@ -17,8 +30,10 @@ li {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 15px;
-    padding: 16px;
+    padding: 5px;
+	word-spacing: 10px;
     position: relative;
+
 }
 
 #about_link,
@@ -26,6 +41,12 @@ li {
 #portfolio_link {
 	color: grey;
 	text-decoration: none;
+}
+#portfolio_link {
+	border-left: solid lightgrey 1px;
+	border-right: solid lightgrey 1px;
+	padding: 0px 10px;
+
 }
 
 #about_link:hover {
@@ -55,8 +76,10 @@ h1 {
 }
 
 header {
-	position: relative;
+    align-self: flex-start;
+/*	position: relative;*/
 /*	top: 0px;*/
+	width: 100%;
 	background-color: #ffffff;
 	color: white;
 	font-size: 35px;
@@ -69,6 +92,7 @@ header {
 }
 
 #hillary {
+	font-family: Georgia, Times, "Times New Roman", serif;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -91,10 +115,10 @@ body {
 
 }
 
-#about_me, 
+/*#about_me, */
 .pic-body,
-.pic-box,
-#connect {
+.pic-box
+/*#connect */{
 	float: left;
 }
 
@@ -102,38 +126,43 @@ body {
 	background-color: #ffffff;
 	border-color: #dddddd;
 	border-style: solid;
+	border-width: 1px;
 	height: 500px;
-	width: 650px;
-	margin: 25px 25px 25px 200px;
-	padding: 20px;
+	width: 590px;
+/*	margin: 25px 25px 25px 200px;*/
+	padding: 35px;
 	line-height: 200%;
 }
+
 
 
 .pic-body {
 	background-color: #ffffff;
 	border-color: #dddddd;
 	border-style: solid;
+	border-width: 1px;
 	height: 900px;
-	width: 650px;
-	margin: 25px 25px 25px 200px;
-	padding: 20px;
+	width: 590px;
+/*	margin: 25px 25px 25px 200px;*/
+	padding: 35px;
 	line-height: 200%;
 }
 .pic-box {
-	width: 320px;
-	height: 270px;
+	margin: 20px 21px 0px 0px;
+	width: 274px;
+	height: 260px;
 }
 
 .pics {
-	margin: 20px;
-	width: 290px;
+/*	margin: 20px 20px 0px 0px;*/
+	width: 274px;
 	height: 220px;
+
 }
 
 .overlay {
 	position: relative;
-	bottom: 125px;
+	bottom: 100px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -141,9 +170,9 @@ body {
 	color: white;
 	font-size: 22px;
 	background-color: #4aaaa5;
-	width: 290px;
+	width: 274px;
 	height: 65px;
-	margin: 20px;
+/*	margin: 20px;*/
 }
 
 #paragraph {
@@ -151,27 +180,30 @@ body {
 }
 
 #connect {
+
+	font-family: Georgia, Times, "Times New Roman", serif;
 	background-color: white;
 	border-color: #dddddd;
 	border-style: solid;
+	border-width: 1px;
 	height: 200px;
-	width: 270px;
+	width: 230px;
 	text-align: center;
 	padding: 20px;
-	margin: 25px 200px 25px 0px;
-
+	margin-left: 26px;
 }
+
+.image-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
 .connect-images {
-	float: right;
-	text-align: center;
-/*	display: flex;
-	flex-wrap: nowrap;*/
-	margin: 12px;
-	align-items: stretch;
 	height: 65px;
 	width: 65px;
+	border-radius: 8px;
 }
-
 
 
 .connect-images:hover {
@@ -181,10 +213,10 @@ body {
 
 form {
 	color: grey;
-	margin: 20px;
+/*	margin: 20px;*/
 	font-size: 18px;
 	line-height: 200%;
-	width: 610px;
+	width: 99%;
 	height: 400px;
 }
 
@@ -209,6 +241,9 @@ textarea {
 }
 
 footer {
+	-webkit-align-self: flex-end;
+    align-self: flex-end;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
